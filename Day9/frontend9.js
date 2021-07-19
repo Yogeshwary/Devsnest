@@ -3,6 +3,7 @@ var booked = document.querySelector(".bookedSeat");
 var remaining = document.querySelector(".remainingSeat");
 booked.innerHTML = 0;
 remaining.innerHTML = 36;
+box[3].style.backgroundColor = 'red';
 
 function Click(){
 	for(var i=0; i<=box.length; i++){
