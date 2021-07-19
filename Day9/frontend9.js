@@ -5,6 +5,10 @@ booked.innerHTML = 0;
 remaining.innerHTML = 36;
 box[3].style.backgroundColor = 'red';
 
+window.onload = function() {
+  Click();
+}
+
 function Click(){
 	for(var i=0; i<=box.length; i++){
 		console.log(i);
