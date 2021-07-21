@@ -1,0 +1,32 @@
+h1 {
+    font-family: Georgia,"Times New Roman", Times,serif;
+    border: 1px solid black;
+    text-align: center;
+    background: lightcyan;
+}
+
+form {
+    font-family: Georgia,"Times New Roman", Times,serif;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.submit{
+    margin-left:45%;
+    font-size: 25px;
+}
+
+.submit:hover{
+    background-color:lightgreen;
+}
+
+.results{
+    height: 400px;
+    width:300px;
+    position:relative;
+    left: 60%;
+    margin-top:-780px;
+    font-family: Georgia,"Times New Roman", Times,serif;
+    font-size: large;
+    text-align:center;
+}
