@@ -1,0 +1,21 @@
+body{
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+}
+
+h3{
+background-color: darkgrey;
+color: white;
+text-align: center;
+margin: 10px 10px 10px 10px;
+}
+
+input{
+margin-left: 10px;
+
+}
+
+.todolist{
+margin-left: 10px;
+font-size: 20px;
+}
