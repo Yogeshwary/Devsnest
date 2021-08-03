@@ -1,0 +1,95 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>front end 13</title>
+
+<style>
+#outerBox{
+  background: lightgreen;
+  border: 3px solid brown;
+  width:700px;
+  height:634px;
+  margin-left:25%;
+}
+
+h2{
+  color:brown;
+  font-family:monospace ,'Times New', Roman;
+  margin-top:-10px;
+  text-align:center;
+}
+
+.img1{
+  position:relative;
+  top:12px;
+  left:5px;
+}
+
+.img2{
+  position:relative;
+  top:10px;
+  left:2px;
+}
+
+span{
+  text-decoration:line-through;
+}
+
+.container{
+  background:white;
+  box-shadow: 0 0 10px green; 
+  border: 2px solid lightgreen;
+  width: 600px;
+  height: 450px;
+  margin-left:45px;
+}
+
+button{
+  position:relative;
+  left:42%;
+  top:3%;
+}
+
+button:hover{
+  color:white;
+  background:brown;
+}
+
+</style>
+  
+</head>
+<body>
+
+<section id='outerBox'>
+  <h2> GETTING BORED, ARE WE?<img src='meme1.jpg' class='img1' width=50px height=50px></img> 
+       <br> HERE'S SOME <span> MAYMAY</span> FOR YOU ! <img src='meme2.jpg' class='img2' width=50px height=50px></img> </h2>
+  <article class='container'>
+  </article>
+  <button type='button'>GENERATE</button>
+</section>
+
+<script>
+  var img = document.createElement('img'); 
+  img.style.width = '600px';
+  img.style.height = '450px';
+  img.src = 'meme3.jpg';
+  const box = document.querySelector('.container');
+  box.appendChild(img);
+  const btn = document.querySelector('button');
+
+  async function geturl(){
+    const res = await fetch('https://meme-api.herokuapp.com/gimme')
+    const data = await res.json()
+    return data
+  }
+
+  btn.addEventListener('click', async ()=>{
+    let response = geturl();
+    let data = await response;
+    img.src= `${data.url}`
+  })
+
+</script>
+  
+</body>
+</html>
