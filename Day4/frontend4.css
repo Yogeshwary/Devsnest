@@ -1,4 +1,5 @@
 .clock {
+    position:absolute;
     width: 500px;
     height: 500px;
     border-radius: 300px;
@@ -19,8 +20,8 @@
 
 .minute {
     position: absolute;
-    top: 45%;
-    right: 56%;
+    top: 43.3%;
+    right: 66%;
     height: 230px;
     width: 3px;
     background-color: black;
@@ -29,8 +30,8 @@
 
 .second {
     position: absolute;
-    top: 41%;
-    right: 42.8%;
+    top: 38.8%;
+    right: 30.3%;
     height: 230px;
     width: 3px;
     background-color: black;
